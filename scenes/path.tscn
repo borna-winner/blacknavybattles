@@ -1,8 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://ddpdershp1xw8"]
 
 [sub_resource type="Curve3D" id="Curve3D_lu84s"]
+closed = true
 _data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -1.00484, 0.000800133, 0.000263928, 0, 0, 0, 0, 0, 0, 1.00119, -0.000797272, 0.00330576),
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 16.0638, 0.00281334, -0.0565891, 0, 0, 0, 0, 0, 0, -16.1329, -0.00248432, 0.0207962),
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2

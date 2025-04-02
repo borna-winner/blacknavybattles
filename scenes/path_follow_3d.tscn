@@ -1,3 +1,7 @@
-[gd_scene format=3 uid="uid://87hucn60rid4"]
+[gd_scene load_steps=2 format=3 uid="uid://87hucn60rid4"]
+
+[ext_resource type="Script" uid="uid://dtyuqn7d64q4h" path="res://scripts/path_follow_3d.gd" id="1_havqw"]
 
 [node name="PathFollow3D" type="PathFollow3D"]
+loop = false
+script = ExtResource("1_havqw")

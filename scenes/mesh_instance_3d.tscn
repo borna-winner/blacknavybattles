@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cmd1f7islt8jg" path="res://assests/Styloo Guns Asset Pack GLTF FBX V1.1/Normal version Color and NormalMap/GLB/ak47.glb" id="1_tvvxl"]
 
-[node name="MeshInstance3D" type="MeshInstance3D"]
+[node name="AK INSTANCE" type="MeshInstance3D"]
 
 [node name="ak472" parent="." instance=ExtResource("1_tvvxl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0793527, 0, 0)
