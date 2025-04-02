@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://87hucn60rid4"]
+
+[node name="PathFollow3D" type="PathFollow3D"]
