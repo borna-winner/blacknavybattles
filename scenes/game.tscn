@@ -12,13 +12,13 @@
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0845, 0, -0.0297906)
 
 [node name="PathFollow3D" parent="Path3D" instance=ExtResource("2_lnu2h")]
-transform = Transform3D(-0.00240366, -0.000164539, 0.999998, 0, 0.999999, 0.00016454, -0.999997, 3.95498e-07, -0.00240366, 16.0638, 0.00281334, -0.0565891)
+transform = Transform3D(-0.00240366, -0.000164539, 0.999998, 7.27596e-12, 0.999999, 0.00016454, -0.999997, 3.95505e-07, -0.00240366, 16.0638, 0.00281334, -0.0565891)
 
 [node name="MeshInstance3D" parent="Path3D/PathFollow3D" instance=ExtResource("3_lnu2h")]
-transform = Transform3D(0.0108731, -0.000796255, 0.999941, 0.000796254, 1, 0.000787644, -0.999941, 0.000787643, 0.0108737, 0.0205509, 3.70834e-05, -0.0465698)
+transform = Transform3D(0.103839, -0.00760423, 9.54943, 0.00760422, 9.54999, 0.00752199, -9.54943, 0.00752198, 0.103845, 0.0205509, 3.70834e-05, -0.0465698)
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.939334, 0.343004, 0, -0.343004, 0.939334, 14.623, 0.391514, 2.143)
+transform = Transform3D(1, 0, 0, 0, 0.889321, 0.457284, 0, -0.457284, 0.889321, -0.640114, 18.1157, 35.6845)
 script = ExtResource("1_lbhrr")
 
 [node name="PSX_Modular_Castle" parent="." instance=ExtResource("5_iywne")]
