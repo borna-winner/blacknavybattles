@@ -7,5 +7,5 @@ func _process(delta):
 	progress += speed * delta
 
 	# Clamp progress to ensure it never exceeds 1.0
-	if progress >= 29.0:
-		progress = 29.0
+	if progress >= 27.0:
+		progress = 27.0

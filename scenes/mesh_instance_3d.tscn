@@ -1,8 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://p8em1q2tl7gn"]
+[gd_scene load_steps=3 format=3 uid="uid://p8em1q2tl7gn"]
 
+[ext_resource type="Script" uid="uid://c0xolndm8dyjg" path="res://scripts/ak.gd" id="1_5mqvj"]
 [ext_resource type="PackedScene" uid="uid://cmd1f7islt8jg" path="res://assests/Styloo Guns Asset Pack GLTF FBX V1.1/Normal version Color and NormalMap/GLB/ak47.glb" id="1_tvvxl"]
 
 [node name="AK INSTANCE" type="MeshInstance3D"]
+script = ExtResource("1_5mqvj")
 
 [node name="ak472" parent="." instance=ExtResource("1_tvvxl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0793527, 0, 0)
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+target_position = Vector3(10, -1, 0)

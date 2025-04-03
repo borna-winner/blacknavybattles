@@ -1,10 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://boahnnm38x3s"]
+[gd_scene load_steps=4 format=3 uid="uid://cnaumv4jdma7i"]
 
+[ext_resource type="Script" uid="uid://b3ip2u0uegnao" path="res://scripts/bullet.gd" id="1_rtsr5"]
 [ext_resource type="PackedScene" uid="uid://dbememsx7enuy" path="res://assests/Styloo Guns Asset Pack GLTF FBX V1.1/Normal version Color and NormalMap/GLB/bullet1.glb" id="1_vcldp"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_vcldp"]
 
 [node name="Bullet" type="RigidBody3D"]
+transform = Transform3D(0.00797605, 0.999968, 0, -0.999968, 0.00797605, 0, 0, 0, 1, 0, 0.0046367, 0)
+script = ExtResource("1_rtsr5")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 

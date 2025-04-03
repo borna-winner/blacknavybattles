@@ -3,8 +3,8 @@
 [ext_resource type="Script" uid="uid://cmu8qjshc2n5w" path="res://scripts/camera_3d.gd" id="1_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://ddpdershp1xw8" path="res://scenes/path.tscn" id="1_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://87hucn60rid4" path="res://scenes/path_follow_3d.tscn" id="2_lnu2h"]
-[ext_resource type="PackedScene" uid="uid://ri61ssc3y5pp" path="res://scenes/AK INSTANCE.tscn" id="3_iywne"]
-[ext_resource type="PackedScene" uid="uid://s7yxtsaqxgc0" path="res://scenes/castl.tscn" id="5_iywne"]
+[ext_resource type="PackedScene" uid="uid://p8em1q2tl7gn" path="res://scenes/mesh_instance_3d.tscn" id="3_lnu2h"]
+[ext_resource type="PackedScene" uid="uid://cja2lxs423tnv" path="res://assests/PSX_Modular_Castle.glb" id="5_iywne"]
 
 [node name="game" type="Node3D"]
 
@@ -12,14 +12,14 @@
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0845, 0, -0.0297906)
 
 [node name="PathFollow3D" parent="Path3D" instance=ExtResource("2_lnu2h")]
-transform = Transform3D(-0.00240366, -0.000164539, 0.999998, 7.27596e-12, 0.999999, 0.00016454, -0.999997, 3.95505e-07, -0.00240366, 16.0638, 0.00281334, -0.0565891)
+transform = Transform3D(-0.00240366, -0.000164539, 0.999998, 0, 0.999999, 0.00016454, -0.999997, 3.95498e-07, -0.00240366, 16.0638, 0.00281334, -0.0565891)
 
-[node name="AK INSTANCE" parent="Path3D/PathFollow3D" instance=ExtResource("3_iywne")]
-transform = Transform3D(0.140978, -0.00115155, 6.99858, 0.00115155, 7, 0.00112858, -6.99858, 0.00112859, 0.140978, -1.74704, 0.843495, -0.0040617)
-layers = 2
+[node name="MeshInstance3D" parent="Path3D/PathFollow3D" instance=ExtResource("3_lnu2h")]
+transform = Transform3D(0.103839, -0.00760423, 9.54943, 0.00760422, 9.54999, 0.00752199, -9.54943, 0.00752198, 0.103845, 0.0205509, 3.70834e-05, -0.0465698)
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.889321, 0.457284, 0, -0.457284, 0.889321, -0.640114, 18.1157, 35.6845)
 script = ExtResource("1_lbhrr")
 
 [node name="PSX_Modular_Castle" parent="." instance=ExtResource("5_iywne")]
+transform = Transform3D(-0.0176619, 0, -0.999844, 0, 1, 0, 0.999844, 0, -0.0176619, -18.6961, -0.37663, 48.922)
