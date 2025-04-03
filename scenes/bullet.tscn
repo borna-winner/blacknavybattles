@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwsmbgg8c14sw"]
+
+[ext_resource type="Script" uid="uid://b3ip2u0uegnao" path="res://scripts/bullet.gd" id="1_y25gk"]
+[ext_resource type="PackedScene" uid="uid://boahnnm38x3s" path="res://scenes/ak_bullet.tscn" id="2_l5glv"]
+
+[node name="Bullet" type="Node3D"]
+
+[node name="Bullet" parent="." instance=ExtResource("2_l5glv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.12341, 0, 1.63535)
+script = ExtResource("1_y25gk")
